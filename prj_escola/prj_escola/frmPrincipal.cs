@@ -39,7 +39,7 @@ namespace prj_escola
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSobre frmSobre = new frmSobre();
-            frmSobre.MdiParent = this;
+           
             frmSobre.Show();
         }
 
@@ -99,5 +99,48 @@ namespace prj_escola
             frmReg_men.Show();
         }
 
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmConsAnalit_Disciplina frmCAnalit_Disc = new frmConsAnalit_Disciplina();
+            frmCAnalit_Disc.MdiParent = this;
+            frmCAnalit_Disc.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            frmConsAnalit_Aluno frmCAnalit_Alu = new frmConsAnalit_Aluno();
+            frmCAnalit_Alu.MdiParent = this;
+            frmCAnalit_Alu.Show();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            frmCons_Analit_Mencoes frmCon_Anali_Men = new frmCons_Analit_Mencoes();
+            frmCon_Anali_Men.MdiParent = this;
+            frmCon_Anali_Men.Show();
+
+        }
+
+        private void disciplinasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmRelatCadDisc frm_relat_disc = new frmRelatCadDisc();
+            frm_relat_disc.MdiParent = this ;
+            frm_relat_disc.Show();
+
+        }
+
+        private void alunosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmRelatCadAluno frm_relat_aluno = new frmRelatCadAluno();
+            frm_relat_aluno.MdiParent = this;
+            frm_relat_aluno.Show();
+        }
+
+        private void analíticosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRelat_Analit frm_relat_analit = new frmRelat_Analit();
+            frm_relat_analit.MdiParent = this;
+            frm_relat_analit.Show();
+        }
     }
 }

@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
+    <Compile Include="frmRelatCadAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatCadAluno.Designer.cs">
+      <DependentUpon>frmRelatCadAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsAnalit_Mencoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsAnalit_Mencoes.Designer.cs">
+      <DependentUpon>frmConsAnalit_Mencoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadDisciplina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +70,18 @@
     </Compile>
     <Compile Include="frmCad_Aluno.Designer.cs">
       <DependentUpon>frmCad_Aluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsAnalit_Aluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsAnalit_Aluno.Designer.cs">
+      <DependentUpon>frmConsAnalit_Aluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsAnalit_Disciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsAnalit_Disciplina.Designer.cs">
+      <DependentUpon>frmConsAnalit_Disciplina.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCons_Aluno.cs">
       <SubType>Form</SubType>
@@ -83,6 +107,12 @@
     <Compile Include="frmRegMencao.Designer.cs">
       <DependentUpon>frmRegMencao.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRelat_Analit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelat_Analit.Designer.cs">
+      <DependentUpon>frmRelat_Analit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSobre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +121,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmRelatCadDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatCadDisc.Designer.cs">
+      <DependentUpon>frmRelatCadDisc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmRelatCadAluno.resx">
+      <DependentUpon>frmRelatCadAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsAnalit_Mencoes.resx">
+      <DependentUpon>frmConsAnalit_Mencoes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadDisciplina.resx">
       <DependentUpon>frmCadDisciplina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCad_Aluno.resx">
       <DependentUpon>frmCad_Aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsAnalit_Aluno.resx">
+      <DependentUpon>frmConsAnalit_Aluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsAnalit_Disciplina.resx">
+      <DependentUpon>frmConsAnalit_Disciplina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCons_Aluno.resx">
       <DependentUpon>frmCons_Aluno.cs</DependentUpon>
@@ -109,6 +157,9 @@
     <EmbeddedResource Include="frmRegMencao.resx">
       <DependentUpon>frmRegMencao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRelat_Analit.resx">
+      <DependentUpon>frmRelat_Analit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSobre.resx">
       <DependentUpon>frmSobre.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +167,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatCadDisc.resx">
+      <DependentUpon>frmRelatCadDisc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -173,6 +227,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add-circular-outlined-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -145,11 +145,7 @@ namespace prj_escola
                 MessageBox.Show("Descrição inválido. Redigite !!", "Atenção!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txbDescri.Focus();
             }
-            else if (txbSerie.Text == "")
-            {
-                MessageBox.Show("Série inválido. Redigite !!", "Atenção!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txbSerie.Focus();
-            }
+            
             else
             {
                 erro = false;
@@ -211,7 +207,7 @@ namespace prj_escola
 
         }
 
-        private void txbPesq_Nome_TextChanged(object sender, EventArgs e)
+        /*private void txbPesq_Nome_TextChanged(object sender, EventArgs e)
         {
             _query = "Select * from Disciplinas where sigla like '" + txbPesq_Sigla.Text + "%'";                     
            OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
@@ -227,7 +223,7 @@ namespace prj_escola
                txbPesq_Sigla.Text = "";
            }
         }
-
+        */
         private void txbPesq_Sigla_TextChanged(object sender, EventArgs e)
         {
             _query = "Select * from Disciplinas where sigla like '" + txbPesq_Sigla.Text + "%'";

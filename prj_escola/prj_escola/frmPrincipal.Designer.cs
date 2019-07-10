@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.mStrip_frmPrincipal = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,10 +48,6 @@
             this.alunosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.disciplinasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.analíticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslDesenvolvedor = new System.Windows.Forms.ToolStripStatusLabel();
@@ -70,12 +67,12 @@
             // 
             // mStrip_frmPrincipal
             // 
+            this.mStrip_frmPrincipal.BackColor = System.Drawing.Color.Gold;
             this.mStrip_frmPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrosToolStripMenuItem,
             this.consultasToolStripMenuItem,
             this.registrarMençõesToolStripMenuItem,
-            this.relatóriosToolStripMenuItem,
-            this.sobreToolStripMenuItem});
+            this.relatóriosToolStripMenuItem});
             this.mStrip_frmPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mStrip_frmPrincipal.Name = "mStrip_frmPrincipal";
             this.mStrip_frmPrincipal.Size = new System.Drawing.Size(1184, 24);
@@ -94,14 +91,14 @@
             // alunosToolStripMenuItem
             // 
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alunosToolStripMenuItem.Text = "Alunos";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
             // 
             // disciplinasToolStripMenuItem
             // 
             this.disciplinasToolStripMenuItem.Name = "disciplinasToolStripMenuItem";
-            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.disciplinasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.disciplinasToolStripMenuItem.Text = "Disciplinas";
             this.disciplinasToolStripMenuItem.Click += new System.EventHandler(this.disciplinasToolStripMenuItem_Click);
             // 
@@ -150,20 +147,23 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(80, 22);
-            this.toolStripMenuItem2.Text = "1";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
+            this.toolStripMenuItem2.Text = "Disciplina";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(80, 22);
-            this.toolStripMenuItem3.Text = "2";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(125, 22);
+            this.toolStripMenuItem3.Text = "Alunos";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(80, 22);
-            this.toolStripMenuItem4.Text = "3";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(125, 22);
+            this.toolStripMenuItem4.Text = "Menção";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // registrarMençõesToolStripMenuItem
             // 
@@ -195,48 +195,21 @@
             this.alunosToolStripMenuItem1.Name = "alunosToolStripMenuItem1";
             this.alunosToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
             this.alunosToolStripMenuItem1.Text = "Alunos";
+            this.alunosToolStripMenuItem1.Click += new System.EventHandler(this.alunosToolStripMenuItem1_Click);
             // 
             // disciplinasToolStripMenuItem1
             // 
             this.disciplinasToolStripMenuItem1.Name = "disciplinasToolStripMenuItem1";
             this.disciplinasToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
             this.disciplinasToolStripMenuItem1.Text = "Disciplinas";
+            this.disciplinasToolStripMenuItem1.Click += new System.EventHandler(this.disciplinasToolStripMenuItem1_Click);
             // 
             // analíticosToolStripMenuItem
             // 
-            this.analíticosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem7});
             this.analíticosToolStripMenuItem.Name = "analíticosToolStripMenuItem";
             this.analíticosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.analíticosToolStripMenuItem.Text = "Analíticos";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(80, 22);
-            this.toolStripMenuItem5.Text = "1";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(80, 22);
-            this.toolStripMenuItem6.Text = "2";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(80, 22);
-            this.toolStripMenuItem7.Text = "3";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.sobreToolStripMenuItem.Text = "Sobre";
-            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
+            this.analíticosToolStripMenuItem.Click += new System.EventHandler(this.analíticosToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -268,6 +241,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Gold;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
@@ -347,13 +321,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::prj_escola.Properties.Resources.math_wallpaper_7;
+            this.BackgroundImage = global::prj_escola.Properties.Resources.wallpaper;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 682);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.mStrip_frmPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mStrip_frmPrincipal;
             this.Name = "frmPrincipal";
@@ -379,7 +354,6 @@
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarMençõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem disciplinasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cdasToolStripMenuItem;
@@ -393,9 +367,6 @@
         private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem disciplinasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem analíticosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tsslHora;
         private System.Windows.Forms.ToolStripStatusLabel tsslDesenvolvedor;

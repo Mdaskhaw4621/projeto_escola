@@ -32,7 +32,7 @@ namespace prj_escola
 
         private void carregar_aluno()
         {
-            _query = "SELECT * from Alunos order by nome";
+            _query = "SELECT * from Alunos order by Nome";
 
             OleDbCommand _dataCommand = new OleDbCommand(_query, conn);
 
@@ -183,6 +183,8 @@ namespace prj_escola
         {
             lblDisc_view.Text = cbDisciplina.SelectedValue.ToString();
         }
+
+    
 
     }
 }
